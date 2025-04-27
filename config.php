@@ -1,9 +1,9 @@
 <?php
-	$dbConnect = @mysqli_connect("localhost", "root","");
+	$dbConnect = @mysqli_connect("database-1.csisyyz3fkmm.us-east-1.rds.amazonaws.com", "admin","BBUWeb123#");
 	if (!$dbConnect)
 		die("<p>The database server is notavailable.</p>");
 	//echo "<p>Successfully connected to the database server.</p>";
-	$dbSelect = @mysqli_select_db($dbConnect, "aw");
+	$dbSelect = @mysqli_select_db($dbConnect, "database-1");
 	if (!$dbSelect)
 		die("<p>The database is not available.</p>");
 	//echo "<p>Successfully opened the database.</p>";
